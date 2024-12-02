@@ -1,5 +1,11 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Sobre from './components/Sobre';
+import Projetos from './components/Projetos';
+import Contato from './components/Contato';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,8 +24,18 @@ function App() {
           Learn React
         </a>
       </header>
+
+      {/* Aqui estão os componentes principais do site */}
+      <div>
+        <Header />
+        <Sobre />
+        <Projetos />
+        <Contato />
+        <Footer />
+      </div>
     </div>
   );
 }
 
 export default App;
+
